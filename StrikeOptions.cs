@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace IDF_Operatuin
 {
-    internal class StrikeOptions
+    internal interface IStrikeOptions
+    {
+
+    }
+    internal class StrikeOptions : IStrikeOptions
     {
     }
 }
