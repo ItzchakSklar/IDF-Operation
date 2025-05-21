@@ -8,13 +8,13 @@ namespace IDF_Operatuin
 {
     internal class Fuel
     {
-        private double Fuelquantity;
+        private double Fuelquantity = 0.00;
 
         /*
          Method type "void" after validation that is approved
         check updates the fuel quantity
         @param: double
-
+        @return : 
          */
         private void UpdateFuelquantity(double number)
         {
@@ -53,7 +53,6 @@ namespace IDF_Operatuin
             A method that returns the current fuel value.
             @param: 
             @return:doubl of current fuel value.
-
              */
         public double GetFuel()
         {
