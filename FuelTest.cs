@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace IDF_Operatuin
 {
-    internal class Fuel
-    {
-        //פעולות מימוש עתידיות של המחלקה: אמור להיות איזשהו ערך שבשעת טיסה לדוגמא יוריד את כמות הדלק במטוס 
+    //פעולות מימוש עתידיות של המחלקה: אמור להיות איזשהו ערך שבשעת טיסה לדוגמא יוריד את כמות הדלק במטוס 
 
-        //איזשהו משתנה פנימי שמגדיר את כמות הדלק הכוללת
-        private double Fuelquantity = 0.00;
+    internal class FuelTest // זה המיכל שיש למטוסים או לכלי תקיפות - אולי מיכלי דלק בבסיסים יהיו מימוש שונה  אולי זה 
+    {
+        private double Fuelquantity;
+        private FuelTest()
+        {
+            Fuelquantity = 0.00;
+        }
 
         /*
          Method type "void" after validation that is approved
@@ -22,6 +25,12 @@ namespace IDF_Operatuin
         private void UpdateFuelquantity(double number)
         {
             Fuelquantity = Fuelquantity + number;
+        }
+        //מתודה נסיונית לריקון אובייקט אחד ומילוי השני
+        private void UpdateFuelquantityNN(double number, Fuel other)
+        {
+            Fuelquantity = Fuelquantity + number;
+            FuelTest.
         }
         /*
             Security and validation method
@@ -45,6 +54,7 @@ namespace IDF_Operatuin
             @param: double
             @return :
              */
+        //יכול להיות שנממש את המתודה בצורה של ריקון מיכל אחד ומילוי מיכל שני - אולי מימוש אחר - לבדוק ולהתייעץ
         public void SetFuel(double NewUpdateValue)
         {
             string inputUser = "";
