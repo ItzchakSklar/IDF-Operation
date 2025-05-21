@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace IDF_Operatuin
 {
-    internal class IStrikeOptions
+    internal interface IStrikeOptions
     {
+        string UniqueName { get; set; }
+        Dictionary<string, int> AmmunitionCapacity { get; set; }
+        //אספקת דלק אולי תהיה מימוש נוסף של class
+        Fuel FuelSupply { get; set; }
+        List<string> VulnerableTargets { get; set; }
     }
 }
