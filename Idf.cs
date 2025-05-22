@@ -10,6 +10,6 @@ namespace IDF_Project
     {
         public string DateOfEstablishment = "05/1948";
         public string Comander = "yoyo";
-        List<StrikeOption> = new List<StrikeOption>();  
+        List<StrikeOption> StrikeOptionList = new List<StrikeOption>();  
     }
 }
