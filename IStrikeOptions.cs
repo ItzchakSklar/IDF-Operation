@@ -8,10 +8,16 @@ namespace IDF_Operatuin
 {
     internal interface IStrikeOptions
     {
-        string UniqueName { get; set; }
-        Dictionary<string, int> AmmunitionCapacity { get; set; }
-        //אספקת דלק אולי תהיה מימוש נוסף של class
-        Fuel FuelSupply { get; set; }
-        List<string> VulnerableTargets { get; set; }
+        List<string> VulnerableTargets { get; set; } // הצגת נגד מה הם יכולים לתקוף : מבנים או ...
+
+        // אני צריך את השם של הכלי - ממה זה יורכב? את זה אני אחליט בתוך המחלקה עצמ
+        void ShowUniqueName();
+        //הצג את כמות החימוש(הפצצות) שנותר
+        void ShowTheAmountOfAmmunitionRemaining();
+
+        // הצגת כמות דלק לצורך חישוב - בלי להיכנס עכשיו לנושא של "דלק"   ץ
+        // הצג האם אפשרי תקיפה בהתבסס על דלק ומרחק
+        // Show whether an attack is possible based on fuel and distance
+        void ShowWhetherAnAttack();
     }
 }
