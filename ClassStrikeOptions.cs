@@ -10,17 +10,19 @@ using IDF_Operatuin;
 namespace IDF_Operatuin
 {
     
-    internal class StrikeOptions : ClassAbstractStrikeOption
+    internal class ClassStrikeOptions : ClassAbstractStrikeOption
     {
         public string NameOfThetool;//שם הכלי
         
         public List<string> TypesOfBombs;//סוגי פצצות
-        public Dictionary<string, int> SumOfBombs = new Dictionary<string,int>();
-        public List<string> VulnerableTargets; //הצגת נגד מה הם יעילים בתקיפה
+        public Dictionary<string, int> SumOfBombs = new Dictionary<string,int>();//סך הפצצות
+        
 
         public List<string> EffectiveAgainst;//יעיל נגד
 
-        public StrikeOptions(string name, List<string> effectivs, List<string> Bomb, List<string> vulnerableTargets)
+        public string PoweredBy;
+
+        public ClassStrikeOptions(string name, List<string> effectivs, List<string> Bomb, List<string> vulnerableTargets)
         {
             //לעת עתה - אח"כ לשנות
             NameOfThetool = name;
@@ -43,7 +45,10 @@ namespace IDF_Operatuin
         {
 
         }//חישוב דלק להפצצה
-        public  void ShowUniqueName() { }
+        public void ShowUniqueName() 
+        {
+            Console.WriteLine();
+        }
         public  void ShowTheAmountOfAmmunitionRemaining() { }
         public void ShowWhetherAnAttack() { }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IDF_Operatuin
 {
-    internal class ClassStrikeOptions_OneTypeEffectiveForSeveral :ClassAbstractStrikeOption
+    internal class ClassStrikeOptions_OneTypeEffectiveForSeveral 
     {
         public string NameOfThetool;//שם הכלי
 
