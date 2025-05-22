@@ -8,6 +8,7 @@ namespace IDF_Project
 {
     internal class Aman
     {
+<<<<<<< HEAD
         public Terrorist LinkedTerrorist { get; private set; }
         private string plias { get; set; }
         public DateTime TimeStamp { get; private set; } = DateTime.Now;
@@ -15,5 +16,13 @@ namespace IDF_Project
         {
             TimeStamp = DateTime.Now;
         }
+=======
+        private List<TerroristTracker> Teroristes = new List<TerroristTracker>();
+        public void AddTerorrist(TerroristTracker Terorist)
+            Teroristes.Add(Terorist)
+
+
+
+>>>>>>> master
     }
 }

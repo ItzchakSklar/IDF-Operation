@@ -14,6 +14,10 @@ namespace IDF_Project
         public void UpdateTimeStamp()
         {
             TimeStamp = DateTime.Now;
+<<<<<<< HEAD
         }
+=======
+        } 
+>>>>>>> master
     }
 }
