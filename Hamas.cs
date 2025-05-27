@@ -8,5 +8,8 @@ namespace IDF_Project
 {
     internal class Hamas
     {
+        public string DateOfFormation = "1987";
+        public string CurrentCommander = "pisky";
+        public List<Terrorist> TerroristList = new List<Terrorist>(); 
     }
 }

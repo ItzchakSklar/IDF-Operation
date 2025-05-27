@@ -15,8 +15,8 @@ namespace IDF_Operatuin
         public List<string> VulnerableTargets; //הצגת נגד מה הם יעילים בתקיפה
 
         public abstract void CalculationOfFuelForBombing();//חישוב דלק להפצצה
-        public abstract void ShowUniqueName();
-        public abstract void  ShowTheAmountOfAmmunitionRemaining();
-        public abstract void ShowWhetherAnAttack();
+        public abstract void ShowUniqueName();//שליחת השם המלא של הכלי 
+        public abstract void  ShowTheAmountOfAmmunitionRemaining();//הצג את כמות התחמושת שנותרה
+        public abstract void ShowWhetherAnAttack();//הצג האם בעל יכולת תקיפה בכלל
     }
 }
