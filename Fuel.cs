@@ -106,22 +106,26 @@ namespace IDF_Operatuin
         /*
             A method that calculates fuel consumption time while the tool is in operation
          */
-        public void CalculateFuelTime(int timeMonth) // , DateTime timeInput)
+        public double CalculateFuelTime(int timeMonth) // , DateTime timeInput)
         {
-            if (timeMonth == 0)
-            {
-                int monthInt = 0;
-                int hourInt = 0;
 
-                //מציג את השעה הנוכחית ומוציא דקות
-                DateTime timeNow = DateTime.Now;
+            double a = Fuelquantity - timeMonth;
+            return a;
 
-                string Month = timeNow.Month.ToString();
-                string hour = timeNow.Hour.ToString();
-                monthInt = Convert.ToInt32(Month);//casting 
-                hourInt = Convert.ToInt32(hour);
-                //לעשות חישוב של פחות הזמן שהגיע 
-            }
+            //if (timeMonth == 0)
+            //{
+            //    int monthInt = 0;
+            //    int hourInt = 0;
+
+            //    //מציג את השעה הנוכחית ומוציא דקות
+            //    DateTime timeNow = DateTime.Now;
+
+            //    string Month = timeNow.Month.ToString();
+            //    string hour = timeNow.Hour.ToString();
+            //    monthInt = Convert.ToInt32(Month);//casting 
+            //    hourInt = Convert.ToInt32(hour);
+            //    //לעשות חישוב של פחות הזמן שהגיע 
+            //}
         }
             
     }
